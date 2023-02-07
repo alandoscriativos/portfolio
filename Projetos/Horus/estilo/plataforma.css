@@ -1,0 +1,812 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html body{
+    background: #121214;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1380px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/*BACKGROUND*/
+header{
+    margin: 0 auto;
+    position: relative;
+    height: 160vh;
+    max-width: 1200px;
+    background-image: url(/Projetos/Horus/imagens/filme/background-batman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*BACKGROUND*/
+
+/*here is the menu*/
+.menu{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    position: absolute;
+    top: 0;
+    left: 700px;
+    transform: translate(-50,-50);
+}
+
+/*LOGO*/
+header .logo img{
+    display: block;
+    width: 350px;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+
+form label input{
+    display: inline-block;
+    height: 28px;
+    border: 1px solid white;
+    padding-top: 1px;
+    background: #2222;
+    color: white;
+    padding-left: 10px;
+}
+
+form label button{
+    padding-bottom: 28px;
+    margin-top: 35px;
+    height: 25px;
+    border: none;
+    background: #6c63ff;
+}
+
+/*icon search*/
+ .icon-search{
+    padding-top: 8px;
+    width:25px;
+    display: inline-block;
+    cursor: pointer;
+ }
+
+/*MENU*/
+nav{
+    display: inline-block;
+    margin-top: 45px;
+    margin-left: 40px;;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 10px;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*MENU MOBILE*/
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+.menu-mobile{
+    z-index: 11;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: none;
+    top:45px;
+    right: 0;
+    margin-right: 30px;
+}
+
+.menu-mobile label{
+    cursor: pointer;
+    position: absolute;
+    display:block;
+    height: 22px;
+    width: 30px;
+}
+
+.menu-mobile label span{
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 30px;
+    transition: 0.2s;
+    background: white;
+}
+
+.menu-mobile label span:nth-child(1){
+    top: 0;
+}
+
+.menu-mobile label span:nth-child(2){
+    top: 8px;
+}
+
+.menu-mobile label span:nth-child(3){
+    top: 16px;
+}
+
+#checkbox-menu:checked +  label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked +  label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked +  label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.menumobilelist li{
+    display: none;
+    list-style: none;
+    padding: 10px;
+}
+
+/*notificacao*/
+nav .not-icon{
+    width: 10px;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: -7px;
+    left: 390px;
+    transform: translate(-50,-50);
+}
+
+/*user*/
+
+nav .user-icon{
+    width: 10px;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: -8px;
+    left: 450px;
+    transform: translate(-50,-50);
+}
+
+nav button svg:hover{
+    animation: rubberBand; 
+    animation-duration: 1s;
+}
+
+/*ASSISTIR*/
+header .assistir{
+    color: white;
+    width: 900px;
+    position: absolute;
+    left: 150px;
+    bottom: 50%;
+    transform: translate(-50%,-50%)s;
+    margin: 30px auto;
+}
+
+/*GENERO*/
+.genero{
+    width: 70px;
+    height: 30px;
+    background:#6c63ff;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ESTRELA*/
+.estrela{
+    padding-left: 3px;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+}
+
+.assistir{
+    position: absolute;
+}
+
+.assistir h1{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.assistir p{
+    font-size: 20px;
+    width: 800px;
+    margin-bottom: 20px;
+}
+
+.assistir-agora{
+    width: 200px;
+    height: 50px;
+    background: #6c63ff;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.assistir-agora:hover{
+    width: 200px;
+    height: 50px;
+    background: white;
+    border: none;
+    color: #6c63ff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Flexbox*/
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.assistir h2{
+    font-size: 60px;
+    color: white;
+    margin-top: 10px;
+    border-bottom: 5px solid #6c63ff;
+    padding-top: 20px;
+    width: 90px;
+}
+
+.avaliacao-filme{
+    display: block;
+    position: absolute;
+    padding-left: 25px;
+    bottom: 38px;
+}
+
+.filme-p{
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+}
+
+.filme span{
+    display: inline-block;
+    color: #F9F9F9;
+    font-size: 20px;
+    position: absolute;
+    padding-left: 30px;
+    bottom: 15px;
+}
+
+.filme{
+    position: relative;
+    display: inline-block;
+    bottom: 180px;
+    width: 200px;
+    animation: pulse; 
+    animation-duration: 1s;
+    margin-bottom: 15px;
+}
+
+.filme:hover{
+    animation: heartBeat; 
+    animation-duration: 1s;
+}
+
+.filme img{
+    display: inline-block;
+    cursor: pointer;
+    display: block;
+    width: 180px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 212);
+    margin-left: 10px;
+}
+
+/*RODA PÉ*/
+footer{
+    max-width: 1380px;
+    background:#181818;
+    height: 100px;
+}
+
+footer img{
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*RESPONSIVEL*/
+
+@media screen  and (max-width: 1100px){
+
+    /*LOGO*/
+
+    header{
+        position: relative;
+        height: 130vh;
+        max-width: 1380px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    header .logo img{
+        display: none;
+        width: 350px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+    }
+
+    .menu-mobile{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        top:40px;
+        right: 0;
+        margin-right: 30px;
+    }
+
+    .menumobilelist{
+        display: none;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 30%;
+        background: #222;
+        text-align: center;
+    }
+    
+    .menumobilelist ul{
+        margin-top: 100px;
+    }
+    
+    .menumobilelist li{
+        display: block;
+        list-style: none;
+        padding: 10px;
+    }
+    
+    .menumobilelist a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .menumobilelist a:hover{
+        color:#6c63ff;
+    }
+
+    /*MENU DESKTOP*/
+    nav{
+        display: none;
+    }
+    
+    form label input{
+        display: none;
+    }
+
+    form label button{
+        display: none;
+    }
+
+
+    /*TEXTOS*/
+
+    header .assistir{
+        color: white;
+        width: 900px;
+        position: absolute;
+        left: 20px;
+        top: 70px;
+        bottom: 0;
+        transform: translate(-50%,-50%)s;
+        margin: 50px auto;
+    }
+    
+    /*GENERO*/
+    .genero{
+        width: 70px;
+        height: 30px;
+        background:#6c63ff;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*ESTRELA*/
+    .estrela{
+        padding-left: 3px;
+        margin-bottom: 10px;
+        background: none;
+        border: none;
+    }
+
+    .assistir h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .assistir p{
+        font-size: 15px;
+        width: 310px;
+        margin-bottom: 20px;
+    }
+    
+    .assistir-agora{
+        width: 200px;
+        height: 50px;
+        background: #6c63ff;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .assistir-agora:hover{
+        width: 200px;
+        height: 50px;
+        background: white;
+        border: none;
+        color: #6c63ff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    /*Flexbox*/
+    .flexbox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .assistir h2{
+        font-size: 40px;
+        color: white;
+        margin-top: 40px;
+        border-bottom: 5px solid #6c63ff;
+        padding-top: 20px;   
+        width: 90px;
+    }
+
+    /*FILMES*/
+    .flexbox{
+        display: inline-block;
+    }
+    
+    .filme-p{
+        height: 300px;
+        position: absolute;
+        bottom: 50px;
+        top: 820px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .avaliacao-filme svg{
+        width: 11px;
+    }
+
+    .filme{
+        display: inline-block;
+        width: 150px;
+        transform: translate(-50,-50);
+        margin: 5px;
+        animation: pulse; 
+        animation-duration: 1s;
+    }
+    
+    .filme:hover{
+        animation: heartBeat; 
+        animation-duration: 1s;
+    }
+    
+    .filme img{
+        cursor: pointer;
+        display: inline-block;
+        width: 130px;
+        margin-bottom: 1px;
+    }
+
+    footer{
+        width: 100vw;
+        max-width: 1380px;
+        background:#181818;
+        bottom: 0;
+    }
+
+}
+
+@media screen  and (min-width: 1080px){
+
+    /*LOGO*/
+
+    header{
+        position: relative;
+        height: 200vh;
+        max-width: 1380px;
+        height: 1200px;
+    }
+
+    header .assistir{
+        color: white;
+        width: 900px;
+        position: absolute;
+        left: 150px;
+        bottom: 50%;
+        transform: translate(-50%,-50%)s;
+        margin: 30px auto;
+    }
+ }
+
+@media screen  and (max-width: 375px){
+
+    /*LOGO*/
+
+    header{
+        position: relative;
+        height: 250vh;
+        max-width: 1380px;
+    }
+
+    header .logo img{
+        display: none;
+        width: 350px;
+        position: absolute;
+        left: 50%;
+        top: -9%;
+        transform: translate(-50%,-50%);
+    }
+
+
+    .menu-mobile{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        top:90px;
+        right: 0;
+        margin-right: 30px;
+    }
+
+    .menumobilelist{
+        display: none;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 30%;
+        background: #222;
+        text-align: center;
+    }
+    
+    .menumobilelist ul{
+        margin-top: 100px;
+    }
+    
+    .menumobilelist li{
+        display: block;
+        list-style: none;
+        padding: 10px;
+    }
+    
+    .menumobilelist a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .menumobilelist a:hover{
+        color:#6c63ff;
+    }
+
+    /*MENU DESKTOP*/
+    nav{
+        display: none;
+    }
+    
+    form label input{
+        display: none;
+    }
+
+    form label button{
+        display: none;
+    }
+
+
+    /*TEXTOS*/
+
+    header .assistir{
+        color: white;
+        width: 900px;
+        position: absolute;
+        left: 20px;
+        top: 70px;
+        bottom: 0;
+        transform: translate(-50%,-50%)s;
+        margin: 50px auto;
+    }
+    
+    /*GENERO*/
+    .genero{
+        width: 70px;
+        height: 30px;
+        background:#6c63ff;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*ESTRELA*/
+    .estrela{
+        padding-left: 3px;
+        margin-bottom: 10px;
+        background: none;
+        border: none;
+    }
+
+    .assistir h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .assistir p{
+        font-size: 15px;
+        width: 310px;
+        margin-bottom: 20px;
+    }
+    
+    .assistir-agora{
+        width: 200px;
+        height: 50px;
+        background: #6c63ff;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .assistir-agora:hover{
+        width: 200px;
+        height: 50px;
+        background: white;
+        border: none;
+        color: #6c63ff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    /*Flexbox*/
+    .flexbox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .assistir h2{
+        font-size: 40px;
+        color: white;
+        margin-top: 40px;
+        border-bottom: 5px solid #6c63ff;
+        padding-top: 20px;   
+        width: 90px;
+    }
+
+    /*FILMES*/
+    .flexbox{
+        display: inline-block;
+    }
+    
+    .filme-p{
+        height: 300px;
+        position: absolute;
+        bottom: 50px;
+        top: 820px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .avaliacao-filme svg{
+        width: 11px;
+    }
+
+    .filme{
+        display: inline-block;
+        width: 150px;
+        transform: translate(-50,-50);
+        margin: 5px;
+        animation: pulse; 
+        animation-duration: 1s;
+    }
+    
+    .filme:hover{
+        animation: heartBeat; 
+        animation-duration: 1s;
+    }
+    
+    .filme img{
+        cursor: pointer;
+        display: inline-block;
+        width: 130px;
+        margin-bottom: 1px;
+    }
+
+    footer{
+        width: 100vw;
+        max-width: 1380px;
+        background:#181818;
+        bottom: 0;
+    }
+
+    footer img{
+        width: 290px;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen  and (max-width: 320px){
+
+    /*LOGO*/
+
+    header{
+        position: relative;
+        height: 450vh;
+        max-width: 1380px;
+        background-image: url(/Projetos/Horus/imagens/filme/background-batman.jpg);
+    }
+
+    header .logo img{
+        display: none;
+        width: 350px;
+        position: absolute;
+        left: 50%;
+        top: -6%;
+        transform: translate(-50%,-50%);
+    }  
+}

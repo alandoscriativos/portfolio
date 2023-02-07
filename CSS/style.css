@@ -1,0 +1,1044 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #121212;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: none;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #00D2DF;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-track{
+    background: none;
+}
+
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 ;
+}
+
+#menu{
+    z-index: 1;
+    height: 100px;
+    background: #121212;
+}
+
+#menu h1{
+    padding: 30px;
+    color: #00D2DF;
+    text-align: center;
+}
+
+
+
+#sobre{
+    z-index: 1;
+    height: 400px;
+    background: #121212;
+    width: 100vw;
+    max-width: 100%;
+    background-image: url(/imagens/banner-home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sobre .background{
+    width: 1024px;
+    background: #121212;
+}
+
+.textos-sobre{
+   max-width: 100%;
+   padding: 60px;
+}
+
+/*SOBRE*/
+#sobre h2{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#sobre h1{
+    color:#00D2DF;
+}
+
+#sobre h3{
+    color:white;
+}
+
+.btn-sobre{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   position: relative;
+   width: 300px;
+   height: 130px;
+   margin-left: 60px;
+}
+
+.btn-solo{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding-right: 15px;
+}
+
+/*BOTAO DO LINKEDIN*/
+#sobre button{
+    width: 150px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
+    border-image-slice: 1;
+    cursor: pointer;
+    background: none;
+    transition: 1s;
+}   
+
+#sobre button:hover{
+    width: 150px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+    border-image-slice: 1;
+    cursor: pointer;
+}   
+
+#sobre h5{
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 7px;
+    animation-duration: 1s; 
+    transform: translate(-50 ,-50);
+}
+
+#sobre a:hover{
+    color:#00D2DF;
+}
+
+#sobre h5:hover{
+    color:#00D2DF;
+    animation: rubberBand; 
+    animation-duration: 1s; 
+}
+
+#sobre h4:hover{
+    color:#00D2DF;
+    animation: rubberBand; 
+    animation-duration: 1s; 
+}
+
+
+/*BOTÃO GITHUB*/
+
+#sobre .btn-sobre-single{
+    width: 155px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+    border-image-slice: 1;
+    transition: 1s;
+    cursor: pointer;
+    background: none;
+}
+
+#sobre .btn-sobre-single:hover{
+    width: 155px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
+    border-image-slice: 1;
+    cursor: pointer;
+}  
+
+#sobre .btn-sobre-single-instagram{
+    display: block;
+    width: 155px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
+    border-image-slice: 1;
+    transition: 1s;
+    cursor: pointer;
+    background: none;
+}
+
+#sobre .btn-sobre-single-instagram:hover{
+    width: 155px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+    border-image-slice: 1;
+    transition: 1s;
+    cursor: pointer;
+    background: none;
+}
+
+
+#sobre button a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding-left: 45px;
+    padding-right: 5px;
+}
+
+#sobre h4{
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+#sobre h6{
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    padding: 7px;
+    margin-left: 7px;
+    animation-duration: 1s;
+    transform: translate(-50,-50);
+}
+
+#sobre h6:hover{
+    display: block;
+    cursor: pointer;
+    color: #10D7E2;
+    font-size: 30px;
+    position: absolute;
+    animation: rubberBand; 
+    animation-duration: 1s;
+}
+
+/*FIGMA ICON*/
+#sobre .btn-solo h3{
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    padding: 8px;
+    margin-left: 9px;
+    animation-duration: 1s;
+    transform: translate(-50,-50);
+}
+
+#sobre .btn-solo h3:hover{
+    display: block;
+    cursor: pointer;
+    color: #10D7E2;
+    font-size: 30px;
+    position: absolute;
+    animation: rubberBand; 
+    animation-duration: 1s;
+}
+
+/*SOBRE MIM*/
+
+ #sobre2{
+    height: 400px;
+    background: #151515;
+    color: white;
+ }
+
+.sobre-flexbox{
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*LOGO*/
+
+#sobre2 img{
+    width: 250px;
+    margin: 50px 100px;
+    border-left: 5px solid #00D2DF;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#sobre2 img:hover{
+    width: 270px;
+    margin: 50px 100px;
+    border-left: 5px solid #D24074;
+}
+
+ #sobre2 .textos-sobre2{
+    width: 400px;
+    position: absolute;
+    left: 49%;
+    padding-top: 50px;
+    transform: translate(-50,-50);
+ }
+
+ #sobre2 h1{
+    padding-bottom: 10px;
+ }
+
+ #sobre2 h2{
+    padding-bottom: 10px;
+ }
+
+#sobre2 p{
+    color: #C4C4C4;
+}
+
+ /*BOTAO Currículo*/
+#sobre2 button{
+    width: 150px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
+    border-image-slice: 1;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 20px;
+    background: none;
+}
+
+#sobre2 button:hover{
+    width: 150px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+    border-image-slice: 1;
+    transition: 1s;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 20px;
+}   
+
+#sobre2 h5{
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 197px;
+    margin-top: 37px;
+}
+
+#sobre2 a:hover{
+    color:#00D2DF;
+}
+
+#sobre2 h5:hover{
+    color:#00D2DF;
+    animation: rubberBand; 
+    animation-duration: 1s; 
+}
+
+#sobre2 h4:hover{
+    color:#00D2DF;
+    animation: rubberBand; 
+    animation-duration: 1s; 
+}
+
+/*BOTÃO EMAIL*/
+
+#sobre2 .btn-sobre-single{
+    color: white;
+    font-size: 20px;
+    padding-right: 20px;
+    text-align: right;
+    width: 150px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+    border-image-slice: 1;
+    cursor: pointer;
+    background: none;
+} 
+
+#sobre2 .btn-sobre-single:hover{
+    color:#00D2DF;
+    width: 150px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
+    transition: 1s;
+    border-image-slice: 1;
+    cursor: pointer;
+}  
+
+/*email*/
+.popup{
+    display: none;
+    z-index: 10;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.popup-ativo{
+    display: block;
+}
+
+.email{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(269.96deg, #505050 0%, #121212 100%);;
+    width: 350px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.email-close{
+    text-align: center;
+    cursor: pointer;
+    margin: 20px auto;
+    background: white;
+    color: black;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.email-close:hover{
+    margin: 20px auto;
+    background: #505050;
+    color: white;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+}
+
+.email h1{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#sobre2 button a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 45px;
+}
+
+#sobre2 h4{
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 14px;
+    margin-top: 38px;
+}
+
+/*HARDSKILLS*/
+
+#hardskills{
+    height: 500px;
+    background: #121212;
+}
+
+#hardskills h1{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.skills{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/*BOX*/
+.hardskills-box{
+    margin-left: 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    width: 120px;
+    height: 150px;
+    background: #181818;
+    box-shadow: 5px 5px 5px #121212;
+}
+
+.hardskills-box:hover{
+    margin-left: 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    width: 120px;
+    height: 150px;
+    border: 3px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+    border-image-slice: 1;
+    background: none;
+    animation: pulse; 
+    animation-duration: 2.5s; 
+}
+
+.hardskills-box h2{
+    padding-top: 18px;
+    font-size: 14px;
+}
+
+.hardskills-box i{
+    list-style: none;
+    text-decoration: none;
+}
+
+.hardskills-box h3{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 18px;
+    font-size: 60px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.hardskills-box h3:hover{
+    padding-top: 18px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+/*PROJETOS*/
+
+
+#projetos{
+    height: 870px;
+    background: #151515;
+    color: white;
+}
+
+#projetos h2{
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*MENU PROJETOS*/
+.menu-projetos{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-projetos section{
+    display: inline-block;
+}
+
+.menu-projetos h3{
+    background: none;
+    border-bottom: 0px solid;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.menu-projetos h3:hover{
+    color: #00D2DF;
+    border-bottom: 1px solid #00D2DF;
+    cursor: pointer;
+}
+
+#projetos #projetos-web{
+    display: none;
+}
+
+
+#projetos #projetos-photoshop{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#projetos #projetos-afterEffects{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/*BOX*/
+
+#projetos .projetos-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 10px;
+}
+
+.projetos-single{
+    width: 100%;
+    max-width: 200px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.projetos-single img{
+    cursor: pointer;
+    width: 250px;
+    border-left: 3px solid #00D2DF;
+    transition: 1s;
+}
+
+.projetos-single img:hover{
+    width: 260px;
+    border-left: 3px solid #D24074;
+    animation: jello; 
+    animation-duration: 1s; 
+
+}
+
+#projetos h1{
+    font-size: 20px;
+}
+
+#projetos p{
+    color: #C4C4C4;
+}
+
+/*BOTÃO VISUALIZAR*/
+#projetos .btn-visualizar-single{
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+    border-image-slice: 1;
+    transition: 1s;
+    cursor: pointer;
+    background: none;
+}
+
+#projetos .btn-visualizar-single a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#projetos .btn-visualizar-single:hover{
+    width: 120px;
+    height: 30px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
+    border-image-slice: 1;
+    cursor: pointer;
+} 
+
+/*BOX AFTER*/
+
+.projetos-box1{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 10px;
+}
+
+.projetos-single{
+    width: 100%;
+    max-width: 200px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.projetos-single img{
+    cursor: pointer;
+    width: 250px;
+    border-left: 3px solid #00D2DF;
+    transition: 1s;
+}
+
+.projetos-single img:hover{
+    width: 260px;
+    border-left: 3px solid #D24074;
+    animation: jello; 
+    animation-duration: 1s; 
+
+}
+
+#projetos h1{
+    font-size: 20px;
+}
+
+#projetos p{
+    color: #C4C4C4;
+}
+
+/*BOTÃO VISUALIZAR*/
+#projetos .btn-visualizar-single{
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+    border-image-slice: 1;
+    transition: 1s;
+    cursor: pointer;
+    background: none;
+}
+
+#projetos .btn-visualizar-single a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#projetos .btn-visualizar-single:hover{
+    width: 120px;
+    height: 30px;
+    background: none;
+    border-radius: 10px;
+    border-image: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
+    border-image-slice: 1;
+    cursor: pointer;
+}  
+
+
+/*SERVIÇOS*/
+#servico{
+    height: 500px;
+    background: #121212;
+}
+
+#servico h2{
+    color: white;
+    padding: 20px 0px 40px 0px;
+    text-align: center;
+}
+
+#servico h1{
+    color: white;
+    padding: 20px 0px 20px 0px;
+}
+
+#servico p{
+    color: #C4C4C4;
+    font-size: 18px;
+}
+
+#servico .servico-box img{
+    width: 70px;
+    height: 70px;
+}
+
+#servico .servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#servico .servico-box{
+    width: 320px;
+    height: 300px;
+    background: #181818;
+    padding: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#servico .servico-box:hover{
+    width: 320px;
+    height: 300px;
+    background: #181818;
+    border: 2px solid;
+    border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+    border-image-slice: 1;
+    padding: 30px;
+    margin: 10px;
+    transition: 1s;
+}
+
+/*RODA PÉ*/
+footer{
+    width: 100vw;
+    height: 60px;
+    background: #121212;
+}
+
+footer h1{
+    color: #C4C4C4;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*RESPONSIVEL*/
+
+@media screen and (max-width: 845px) {
+    #sobre2{
+        height: 850px;
+    }
+
+    #sobre2 .textos-sobre2{
+        width: 300px;
+        padding-top: 50px;
+        margin: 0 auto;
+        position: absolute;
+        top: 330px;
+        left: 12%;
+        transform: translate(-50,-50);
+     }
+
+     #projetos{
+        height: 780px;
+    }
+
+    /*SERVIÇOS*/
+    #servico{
+        height: 1100px;
+        background: #121212;
+    }
+
+}
+
+@media screen and (max-width: 844px) {
+    #hardskills{
+        height: 1000px;
+    }
+
+    #projetos{
+        height: 1950px;
+    }
+
+    #sobre{
+        width: 360px;
+    }
+
+    .textos-sobre{
+        margin: 0 auto;
+        width: 400px;
+        position: absolute;
+        
+     }
+
+     #sobre{
+        z-index: 1;
+        height: 400px;
+        background: #121212;
+        width: 100%;
+        max-width: 1200px;
+        position: relative;
+        background-image: url(/imagens/banner-home.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .btn-sobre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: absolute;
+        width: 300px;
+        height: 130px;
+        margin-left: 45px;
+        top: 230px;
+        transform: translate(-50,-50);
+     }
+    
+
+    #sobre2 img{
+        width: 200px;
+        margin: 50px 80px;
+        border-left: 5px solid #00D2DF;
+        transition: 1s;
+    }
+
+    #sobre2 img:hover{
+        width: 210px;
+        margin: 70px 80px;
+        border-left: 5px solid #D24074;
+    }
+
+    #sobre2{
+        height: 900px;
+    }
+
+        /*BOTAO Currículo*/
+    #sobre2 button{
+        width: 150px;
+        height: 50px;
+        background: none;
+        border-radius: 10px;
+        border-image: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
+        border-image-slice: 1;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-right: 20px;
+        background: none;
+        font-size: 10px;
+    }
+
+    #sobre2 button:hover{
+        width: 150px;
+        height: 50px;
+        background: none;
+        border-radius: 10px;
+        border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+        border-image-slice: 1;
+        transition: 1s;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    #sobre2 h5{
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        left: 0;
+        top: 81%;
+        padding-left: 15px;
+        padding-top: 7px;
+        animation: bounce; 
+        animation-duration: 1s; 
+    }
+
+    #hardskills h1{
+        margin-top: 60px;
+        font-size: 30px;
+    }
+
+    .hardskills-box{
+        margin-left: 20px;
+        margin-top: 50px;
+        text-align: center;
+        color: white;
+        width: 120px;
+        height: 150px;
+        background: #181818;
+        box-shadow: 5px 5px 5px #121212;
+    }
+    
+    .hardskills-box:hover{
+        margin-left: 20px;
+        margin-top: 50px;
+        text-align: center;
+        color: white;
+        width: 120px;
+        height: 150px;
+        border: 3px solid;
+        border-radius: 10px;
+        border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
+        border-image-slice: 1;
+        background: none;
+        animation: pulse; 
+        animation-duration: 2.5s; 
+    }
+    
+    .hardskills-box h2{
+        padding-top: 18px;
+        font-size: 14px;
+    }
+    
+    .hardskills-box i{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .hardskills-box h3{
+        color: white;
+        list-style: none;
+        text-decoration: none;
+        padding-top: 18px;
+        font-size: 60px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .hardskills-box h3:hover{
+        padding-top: 18px;
+        font-size: 60px;
+        cursor: pointer;
+    }
+
+    }
+
+
+/*Animação*/
+
+.titulo-principal:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+    color: #10D7E2;
+    font-size: 25px;
+   }
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}

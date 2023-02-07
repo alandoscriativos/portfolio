@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container{
+    padding:0;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.imagem img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 350px;
+}
+
+main{
+    position: relative;
+    height: 120vh;
+    background: white;
+}
+
+.box{
+    margin: 30px auto;
+    width: 230px;
+    height: 120px;
+    background: #04C35C;
+    border-radius: 15px;
+}
+
+
+.login{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 63%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 50px;
+    background: #6c63ff;
+    border-radius: 10px;
+}
+
+.login:hover{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 63%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 50px;
+    background: #04C35C;
+    border-radius: 10px;
+}
+
+main a{
+    text-decoration: none;
+}
+
+main h2{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+main h1{
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+main form label span{
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+main form label input{
+    width: 150px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+main form label input[type="button"]{
+    width: 100px;
+    height: 40px;
+    background: #04C35C;
+    border: none;
+    color: white;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+main form label input[type="button"]:hover{
+    width: 100px;
+    height: 40px;
+    background: #6c63ff;
+    border: none;
+    color: white;
+}
+
+.email{
+    width: 500px;
+    padding-left: 100px;
+    margin: 0 auto;
+}
+
+.email p{
+    font-size: 16px;
+    padding-top: 10px;
+    width: 320px;
+
+}
+
+@media screen and (max-width: 375px){
+    .email{
+        width: 500px;
+        padding-left: 50px;
+        margin: 0 auto;
+    }
+
+    .email p{
+        font-size: 16px;
+        padding-top: 10px;
+        width: 250px;
+    
+    }
+
+    .login{
+        width: 150px;
+        height: 50px;
+        background: #6c63ff;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 325px){
+
+    main{
+        position: relative;
+        height: 140vh;
+        background: white;
+    }
+
+    .email{
+        width: 400px;
+        padding-left: 30px;
+        margin: 0 auto;
+    }
+
+    .email p{
+        font-size: 16px;
+        padding-top: 10px;
+        width: 250px;
+    
+    }
+
+    .login{
+        width: 150px;
+        height: 50px;
+        background: #6c63ff;
+        border-radius: 10px;
+    }
+}

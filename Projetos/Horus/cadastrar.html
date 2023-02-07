@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Projetos/Horus/estilo/cadastrar.css">
+    <script src="https://kit.fontawesome.com/73d6e8278a.js" crossorigin="anonymous"></script>
+    <title>Cadastrar</title>
+</head>
+<body>
+    <!--SCRIPT API AJAX-->
+    <script type="text/javascript">
+        fetch("https://jsonplaceholder.typicode.com/todos/1")
+            .then(response=> response.json())
+            .then(json=> console.log(json));
+        </script>
+        <!--AQUI COMEÇA O CORPO-->
+    <div class="container">
+     <div class="flexbox">
+            <main>
+                <div class="cadastrar">
+                    <h1 class="CADASTRAR" title="Criar Conta">Criar Conta</h1>
+                    <form name="form" action="/Projetos/Horus/confirmacao-conta-criada.html">
+                        <label for="name">
+                             <span>Nome</span>
+                            <input title="Digite seu nome" type="name" name="name" placeholder="Digite seu nome" required>
+                        </label>
+                        <label for="lastname">
+                            <span>Sobrenome</span>
+                            <input title="Digite seu sobrenome" type="lastname" name="lastname" placeholder="Digite seu sobrenome" required>
+                        </label>
+                        <label for="email">
+                            <span>E-mail</span>
+                            <input title="Digite seu e-mail" type="email" name="email" placeholder="Digite seu e-mail" required>
+                        </label>
+                        <label for="password">
+                            <span>Senha</span>
+                            <input title="Digite sua senha" type="password" name="password" placeholder="*******" required>
+                        </label>
+                        <label for="password">
+                            <span>Confirmar senha</span>
+                            <input title="Digite sua senha" type="password" name="password2" placeholder="*******" required>
+                        </label>
+                        <label>
+                            <input class="botão" title="CADASTRAR" type="submit" name="submit" value="CADASTRAR">
+                        </label>
+                    </form><!--AQUI TERMINA O FORM-->
+                    <h5><a title="Já tenho uma conta" href="/Projetos/Horus/index.html">Já tenho uma conta.</a></h5>
+                    <div imagem-mobile>
+                        <img src="/Projetos/Horus/imagens/undraw_absorbed_in_re_ymd6.svg" alt="imagem">
+                    </div><!--MOBILE-->
+                </div><!--cadastrar-->
+            </main>
+            <section>
+                <div class="imagem">
+                    <img src="/Projetos/Horus/imagens/undraw_absorbed_in_re_ymd6.svg" alt="IMAGEM" title="IMAGEM">
+                </div><!--IMAGEM-->
+            </section>
+    </div><!--FLEXBOX-->
+    </div><!--CONTAINER-->
+</body>
+</html>

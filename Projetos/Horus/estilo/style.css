@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1280px;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+/*IMAGEM*/
+section{
+    width: 50%;
+    height: 100vh;
+    background: #f7fafc;
+}
+
+.logo img{
+    max-width: 300px;
+    position: absolute;
+    left: 0px;
+    bottom:530px ;
+    transform: translate(-50,-50);
+}
+
+section .imagem{
+    width: 50%;
+    position: relative;
+}
+
+section img{
+    width: 150%;
+    max-width: 600px;
+    position: absolute;
+    left: 100%;
+    top: 400px;
+    transform: translate(-50%,-50%);
+}
+
+main{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background: white;
+}
+
+main .login{
+    width: 300px;
+    position: absolute;
+    left: 35%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    margin-top: 80px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+main form label{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+main form label input{
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    max-width: 340px;
+    border: 0.5px solid gray;
+}
+
+main form label input[type="radio"]{ 
+    width: 18px;
+}
+
+main form label span{ 
+    width: 130px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 215px;
+    left: 25px;
+}
+
+/*ENTRAR*/
+
+main form label input[type="submit"]{ 
+    color: white;
+    background: #04C35C;
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    cursor: pointer;
+}
+
+main form label input[type="submit"]:hover{ 
+    color: white;
+    background: #6c63ff;
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    cursor: pointer;
+}
+
+
+/*ESQUECEU SUA SENHA*/
+span a{
+    font-size: 17px;
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+    top: 65px;
+    left: -25px;
+
+}
+
+main h3{
+    width: 180px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/*RESPONSIVEL MOBILE*/
+@media screen and (max-width: 860px){
+
+    main form label input{
+        height: 40px;
+        padding: 10px;
+        width: 200px;
+        border: 0.5px solid gray;
+    }
+
+    .flexbox{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+
+    main{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: white;
+    }
+    
+    main .login{
+        width: 30%;
+        margin: 0 auto;
+        transform: translate(-50%,-50%);
+    }
+
+    section{
+        display: none;
+    }
+
+    .logo img{
+        margin-top: 200px;
+        max-width: 200px;
+        position: absolute;
+        left: 100px;
+        bottom:430px ;
+        transform: translate(-50%,-50%);
+    }
+
+    .LE{
+        width: 200px;
+        position: absolute;
+        left: 10%;
+        top:700px;
+        bottom: 0;
+        transform: translate(-50%,-50%);
+    }
+
+    /*ESQUECEU SUA SENHA*/
+    span a{
+        font-size: 17px;
+        width: 100px;
+        position: absolute;
+        left:190px;
+        top: 10px;
+        transform: translate(-50%,-50%);
+}
+
+}

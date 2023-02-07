@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+}
+
+body{
+    background-image: url(/Projetos/Mario\ Jump/IMAGENS/terra.png);
+}
+
+.game-board{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(28, 194, 42);
+    position: relative;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+    overflow: hidden;
+}
+
+/*TUNEL*/
+.pipe{
+    z-index: 4;
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    animation: pipe-animation 2s infinite linear;
+}
+/*animação do tunel*/
+@keyframes pipe-animation{
+    from{
+        right: -80px;
+    } 
+
+    to{
+        right: 100%; 
+    }
+}
+
+/*MARIO*/
+
+.mario{
+    z-index: 3;
+    cursor: pointer;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump{
+    animation: jump 500ms infinite ease-out;
+}
+
+/*animação do jump*/
+@keyframes jump{
+    0%{
+        bottom:0;
+    }
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+/*nuvens*/
+.nuvens{
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    top: 70px;
+    animation: nuvens-animation 15s infinite linear;
+}
+
+@keyframes nuvens-animation{
+    from{
+        right: -300px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+/*MINHAS SKILLS*/
+
+.skills{
+    z-index: 2;
+    position: absolute;
+    width: 500px;
+    animation: skills 25s infinite linear;
+}
+
+@keyframes skills{
+    from{
+        right: -500px
+    }
+    to{ 
+        right: 100%;
+    }
+}
+
+
+/*RESET GAME*/
+
+#resetGame{
+    display: none;
+    z-index: 5;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.popup h1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+}
+
+.popup button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+}

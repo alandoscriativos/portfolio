@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #121214 !important;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+section{
+    position: relative;
+    color: white;
+    height: 150vh;
+    background: #121214;
+    text-align: center;
+    font-weight:lighter;
+    font-size: 20px;
+}
+
+section h1{
+    margin-bottom: 20px;
+}
+
+section h2{
+    color: #A8A8A8
+}
+
+section img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 80px;
+}
+
+
+.flexbox{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+section .circulo1{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(225deg, #781FD1 0%, #570EAB 100%);
+    margin-top: 60px;
+    margin-right: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    animation: pulse; 
+    animation-duration: 1s;
+}
+
+section .circulo2{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #64FA9B 0%, #5FE36A 100%);
+    margin-top: 60px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    animation: pulse; 
+    animation-duration: 1s;
+}
+
+section .circulo3{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background:  linear-gradient(180deg, #4DF0F3 0%, #4D7BFD 100%);
+    margin-top: 60px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    animation: pulse; 
+    animation-duration: 1s;
+}
+
+section .circulo1:hover{
+    cursor: pointer;
+    animation: shakeY; 
+    animation-duration: 2s;
+}
+
+section .circulo2:hover{
+    cursor: pointer;
+    animation: shakeY; 
+    animation-duration: 2s;
+}
+
+section .circulo3:hover{
+    cursor: pointer;
+    animation: shakeY; 
+    animation-duration: 2s;
+}
+
+.flexbox span{
+  text-align: center;
+}
+
+section a{
+    text-decoration: none;
+    color: #A8A8A8;
+}
+
+.add-perfil button{
+    margin-top: 60px;
+    width: 230px;
+    height:60px;
+    color: white;
+    background: #181818;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.add-perfil button:hover{
+    margin-top: 60px;
+    width: 230px;
+    height:60px;
+    color: #181818;
+    background: white; 
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .flexbox{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    section{
+        position: relative;
+        color: white;
+        height: 180vh;
+        background: #121214;
+        text-align: center;
+        font-weight:lighter;
+        font-size: 20px;
+    }
+    
+    section .circulo1{
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: linear-gradient(225deg, #781FD1 0%, #570EAB 100%);
+        margin-top: 60px;
+        margin-right: 10px;
+        cursor: pointer;
+        
+    }
+    
+    section .circulo2{
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #64FA9B 0%, #5FE36A 100%);
+        margin-top: 60px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    section .circulo3{
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background:  linear-gradient(180deg, #4DF0F3 0%, #4D7BFD 100%);
+        margin-top: 60px;
+        cursor: pointer;
+    }
+    
+     section span{
+      width: 500px;
+      display: block;
+      text-align: center;
+    }
+
+    .add-perfil button{
+        margin-top: 60px;
+        width: 300px;
+        height:60px;
+        color: white;
+        background: #181818;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .add-perfil button:hover{
+        margin-top: 60px;
+        width: 300px;
+        height:60px;
+        color: #181818;
+        background: white; 
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+}
